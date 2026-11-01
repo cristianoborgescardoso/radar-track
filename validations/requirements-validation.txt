@@ -1,0 +1,6 @@
+numpy>=1.23
+pandas>=1.4
+scipy>=1.8
+matplotlib>=3.5
+filterpy>=1.4.5
+pymap3d>=3.0.0

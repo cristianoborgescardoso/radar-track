@@ -1,0 +1,19 @@
+{
+  "frames": 151,
+  "size": [
+    1920,
+    1200
+  ],
+  "bytes": 3112167,
+  "loaded_tiles": 18,
+  "source_html": "D:\\git\\beanTrail\\hibrida\\algorithm-engineer-task\\tracks_interactive_map.html",
+  "source_sha256": "11ad81422a9399c668c1bae1bf46e2ee35242ca123407bbdcd8846eb4a845b95",
+  "source_unchanged_during_capture": true,
+  "zoom": 1.1,
+  "layers_start_middle_end": [
+    1,
+    396,
+    787
+  ],
+  "javascript_errors": []
+}

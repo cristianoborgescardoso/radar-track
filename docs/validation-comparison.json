@@ -1,0 +1,19 @@
+{
+  "frames": 151,
+  "size": [
+    1920,
+    1200
+  ],
+  "bytes": 2519231,
+  "loaded_tiles": 24,
+  "source_html": "D:\\git\\beanTrail\\hibrida\\algorithm-engineer-task\\validations\\outputs\\comparison.html",
+  "source_sha256": "8589deb97170b0ec69df680a0383c815d6f6e6f2712424a4ea09f8bf36917281",
+  "source_unchanged_during_capture": true,
+  "zoom": 1.1,
+  "layers_start_middle_end": [
+    2,
+    6,
+    6
+  ],
+  "javascript_errors": []
+}

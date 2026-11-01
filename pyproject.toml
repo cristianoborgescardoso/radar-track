@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radar-tracker"
+version = "1.0.0"
+description = "3D Multi-Target Radar Plot Track Reconstruction using Kalman Filtering and Hungarian Assignment"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "pymap3d>=3.0.0",
+    "filterpy>=1.4.5",
+    "matplotlib>=3.7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["radar_tracker*"]

@@ -1,0 +1,11 @@
+{
+  "start_epoch_s": 1759866499.920408,
+  "end_epoch_s": 1759866559.920408,
+  "start_iso_utc": "2025-10-07T19:48:19.920Z",
+  "end_iso_utc": "2025-10-07T19:49:19.920Z",
+  "total_raw_detections": 1657,
+  "exported_plots": 192,
+  "airborne_only": true,
+  "radar_yaw_ccw_deg": 2.0,
+  "gps_rotated": false
+}

@@ -1,0 +1,81 @@
+# Ambientes virtuais Python
+.venv
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+
+# Bytecode e caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Caches de testes, coverage, tipagem e Jupyter Notebook
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Arquivos de sistema, IDEs e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+*.out
+scratch/
+
+# Arquivos compactados e bases de dados externas pesadas
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+dryad_dataset/
+
+# Arquivos de enunciado e tarefas locais
+task.md
+
+# Rascunhos, experimentos internos e tarefas futuras (não avaliadas)
+future_task/
+.agents/
+README_antigravity.md
+tracks-java.json
+run_pipeline.ps1
+run_pipeline.sh
+diagnostics/outputs/
+diagnostics/plots/
+diagnostics/EXPERIMENT_PLAN.md
+diagnostics/RESULTS.md
+diagnostics/results.csv
+diagnostics/run_hypotheses.py
+diagnostics/run_synthetic_scenarios.py
+diagnostics/suspect_points.csv
+diagnostics/synthetic_results.csv
+diagnostics/track_metrics.csv

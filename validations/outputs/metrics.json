@@ -1,0 +1,44 @@
+{
+  "tracker_estimated": [
+    {
+      "track_id": "T1",
+      "average_speed_mps": 7.81,
+      "average_heading_deg": 217.01,
+      "certainty": 100.0,
+      "confidence": 0.962,
+      "samples": 95,
+      "mse_xy_m2": 94.932,
+      "rmse_xy_m": 9.743,
+      "median_xy_m": 6.304,
+      "p90_xy_m": 13.487,
+      "mean_speed_mps": 7.81,
+      "speed_mae_vs_gps_mps": 0.65,
+      "speed_rmse_vs_gps_mps": 1.14,
+      "duration_s": 55.863
+    }
+  ],
+  "tracker_raw_associated_plots": {
+    "samples": 95,
+    "mse_xy_m2": 327.383,
+    "rmse_xy_m": 18.094,
+    "median_xy_m": 11.62,
+    "p90_xy_m": 29.599,
+    "mean_speed_mps": null,
+    "speed_mae_vs_gps_mps": null,
+    "speed_rmse_vs_gps_mps": null,
+    "duration_s": 55.863
+  },
+  "fortem_r20_onboard_919": {
+    "fortem_track_id": 919,
+    "samples": 126,
+    "mse_xy_m2": 164.358,
+    "rmse_xy_m": 12.82,
+    "median_xy_m": 9.479,
+    "p90_xy_m": 19.586,
+    "mean_speed_mps": 7.16,
+    "speed_mae_vs_gps_mps": 1.46,
+    "speed_rmse_vs_gps_mps": 2.01,
+    "duration_s": 59.194
+  },
+  "method": "Horizontal error evaluated against linearly interpolated UAV RTK GPS at each estimate timestamp (no extrapolation)."
+}
