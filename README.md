@@ -1,5 +1,23 @@
 # Radar Plot Track Reconstruction
 
+## Notes for the Reviewer
+
+I worked for 3 years with surveillance RADAR and electronic warfare. During this time, I developed software that received targets already classified and structured using the ASTERIX protocol. Although I was already familiar with the overall architecture of a surveillance RADAR, I had not yet worked directly on implementing the tracking stage itself.
+
+During my Master's thesis [A Hybrid Solution for 3D Location and Time Synchronization in WSN](https://dl.acm.org/doi/epdf/10.1145/3132062.3132071), which focused on 3D Localization in Wireless Sensor Networks (WSN) using a Drone as a beacon node, I considered using a Kalman Filter to minimize RSSI estimation errors, a technique my lab colleagues were already using for vehicle position prediction. When I read this challenge, I imagined that a Kalman Filter could be a good candidate for part of the solution, handling state filtering and prediction. As I researched and implemented the pipeline, I also identified the need for:
+
+* A Global Assignment Algorithm (Hungarian / Munkres): To handle data association and temporary detection dropouts (coasting), dynamically adjusting the search gate based on the innovation covariance matrix (Mahalanobis distance);
+
+* A Track Lifecycle Manager (SPRT-based): To compute a certainty score that discriminates noise (clutter) from real targets, determining when tracked targets should be confirmed or terminated.
+
+Since this was my first time building a complete tracker from scratch, I researched classic RADAR pipelines, applied them to the challenge dataset, and benchmarked a total of 11 filtering variants to select the most robust one.
+
+Because several sensor parameters, such as antenna rotation rate and measurement uncertainty, were not provided in the problem description, I derived some of them directly from the data, such as a radar rotation rate of ~60 RPM and a target speed ceiling of ~30 m/s (as the targets appear to be drones). Other parameters, such as process and measurement noise, were calibrated based on typical specifications from other short-range air defense radars.
+
+Finally, I wanted to validate how well this solution generalizes beyond the dataset provided in this challenge. To do so, I selected an open dataset from a real drone surveillance radar, the [AERPAW / Fortem TrueView R20](https://datadryad.org/dataset/doi:10.5061/dryad.7d7wm3898), which includes raw plots, onboard tracker outputs from the R20 itself, and RTK GPS ground truth from the drones.
+
+In tests using the R20 dataset, this solution performed well, achieving a slightly lower average position error than the R20's own onboard tracker. Using the published R20 specifications, I adjusted a few parameters specifically for that sensor. Since I used the same R20 data for calibration, testing, and validation, I recognize that these favorable results may carry some overfitting bias. Even so, considering the short development timeframe, these preliminary results feel like a promising indication of the architecture's viability.
+
 ## Architecture & Project Structure
 
 This project is a proof of concept (PoC) for multi-target radar track reconstruction from 3D radar plots. It is structured as a modular Python package ([`radar_tracker/`](./radar_tracker/)) using standard scientific libraries (`pymap3d`, `filterpy`, `scipy`, `pandas`, `numpy`), an externalized `.properties` configuration file ([`tracker.properties`](./tracker.properties)), and an automated test suite:

@@ -49,7 +49,7 @@ validations/
 ## Dataset Overview & Applied Transformations
 
 - **Dataset Source:** **AERPAW / AADM 2025 Dataset** (*Airborne Autonomous Drone Monitoring*), collected at North Carolina State University (Lake Wheeler Field Lab).
-- **Public Repository & Download Link:** Available on the Dryad Data Platform at [https://doi.org/10.5061/dryad.x0k6djhtc](https://doi.org/10.5061/dryad.x0k6djhtc).
+- **Public Repository & Download Link:** Available on the Dryad Data Platform at [https://datadryad.org/dataset/doi:10.5061/dryad.7d7wm3898](https://datadryad.org/dataset/doi:10.5061/dryad.7d7wm3898).
 - **Physical Sensor:** **Fortem TrueView R20** tactical counter-UAS phased-array radar ($15\text{ GHz}$ Ku-band, $\sim 3.9\text{ Hz}$ update rate, $\text{CPI} = 0.256\text{ s}$, field of view $120^\circ \times 30^\circ$).
 - **Ground Truth Target:** Multirotor UAV equipped with a centimeter-level RTK GPS logger during **Optimal Flight 2 (Opt2)**.
 
